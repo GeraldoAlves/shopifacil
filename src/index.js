@@ -32,6 +32,11 @@ db.connect(function(err){
     console.log('Connection established')
 })
 
+app.use('/', (req, res, next) => {
+    console.log('a')
+    next()
+})
+
 app.get('/store/:shopURL' ,async (req, res) =>{
     const {shopURL} = req.params
     try{
