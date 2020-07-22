@@ -13,16 +13,15 @@ app.use(bodyParser.json())
 const upload = multer() 
 
 const db = mysql.createConnection({
-    // host: "45.77.194.113",
-    // port: '3306',
-    // user: "appshopi_app",
-    // password: "3zWVHGFpvWU~",
-    // database: "appshopi_app"
-    // port: '',
-    host: "localhost",
-    user: "root",
-    password: "",
+    host: "45.77.194.113",
+    port: '3306',
+    user: "appshopi_app",
+    password: "3zWVHGFpvWU~",
     database: "appshopi_app"
+    // host: "localhost",
+    // user: "root",
+    // password: "",
+    // database: "appshopi_app"
 })
 const query = util.promisify(db.query).bind(db);
 db.connect(function(err){
