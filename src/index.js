@@ -432,4 +432,4 @@ app.get('/test', (req,res) => {
     res.status(200).send('Ok.')
 })
 
-app.listen(8080, ()=>console.log('Servidor rodando...'))
+app.listen(3333, ()=>console.log('Servidor rodando...'))
