@@ -432,13 +432,4 @@ app.put('/product', upload.none(), async (req, res) => {
     }
 })
 
-app.get('/test', (req,res) => {
-    try{
-        console.log('Testando...')
-        res.status(200).send('Ok.')
-    }catch(err){
-        res.status(400).send(err)
-    }
-})
-
-app.listen(3333, ()=>console.log('Servidor rodando...'))
+app.listen(3000, ()=>console.log('Servidor rodando...'))
